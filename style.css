@@ -1,0 +1,59 @@
+html {
+    background-image: url("pixil-frame-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+
+.speech {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.text {
+    border-radius: 10%;
+}
+
+.bubble1 {
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    color: white;
+}
+
+.bubble2 {
+    width: 0.5px;
+    height: 0.5px;
+    border-radius: 100%;
+    color: white;
+}
+
+.hover-area {
+    width: 60px;
+    height: 90px;
+    color: white
+}
+
+.purple-character {
+    transform: translate(62%, -300%);
+    background-color: white;
+    padding: 5px;
+}
+
+.purple-character.bubble1 {
+    transform: translate(900%, -1800%);
+}
+
+.purple-character.bubble2 {
+    transform: translate(900%, -2000%);
+}
+
+.purple-character.hover-area {
+    transform: translate(50%, -270%);
+    color: transparent !important;
+    background-color: transparent !important;
+}

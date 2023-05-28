@@ -5,20 +5,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <section>
-            <div class="speech">
-                <p class="purple-character text">
-                    Hi! I'm Yarravy. <br>
-                    Hover over my character <br>
-                    to find out more about me.
-                </p>
-                <div class="purple-character bubble1"></div>
-                <div class="purple-character bubble2"></div>
-                <div class="purple-character hover-area"></div>
-             </div>
-        </section>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+
+    </head>
+    
+    <body> 
+                <div class="container">
+                    <div class="item">
+                        <p><a class="contact" href="https://www.linkedin.com/in/yarravy-nguyen-199730258/">LinkedIn</a></p>
+                    </div>
+                    <div class="item">
+                        <p><a class="contact" href="https://github.com/yarravy">GitHub</a></p>
+                    </div>
+                    <div class="item">
+                        <button onclick="openForm()" class="open-button"><p class="contact">Leave me a message!</p></button>
+                    </div>
+                </div>
+                <div class="form-popup" id="myForm" class="form-container">
+                    <div class="cont">
+                        <form action="/action_page.php">
+                            <label for="name">Name:</label>
+                            <input type="text" placeholder="Enter Name" name="name" required>
+    
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Enter Email" name="email">
+    
+                            <label for="message">Message</label>
+                            <input type="text" placeholder="Message" name="message" required>
+    
+                            <button type="submit" class="btn"></button>
+                            <button type="Cancel" onclick="closeForm()" class="btn cancel">Cancel</button>
+    
+                            <script>
+                                function openForm() {
+                                    document.getElementById("myForm").style.display = "block";
+                                }
+    
+                                function closeForm() {
+                                    document.getElementById("myForm").style.display = "none";
+                                }
+                            </script>
+                        </form>
+                    </div>
+                </div>
+                <h1 class="introduction">
+                    Hello! I'm Yarravy. 
+                </h1>
+                <p class="introduction">Welcome to my personal website! <br>To find out a brief info about me, hover over each of the characters in the image below.</p>
+                <section class="main"> 
+                    <img class="main-image" src="pixil-frame-1.png">
+                    <div class="pink hover-rect"></div>
+                    <p class="pink speech">
+                        I'm currently in my <br>
+                        penultimate year of studying <br>
+                        computer science at UNSW!
+                    </p>
+                    <div class="yellow hover-rect"></div>
+                    <p class="yellow speech">
+                        This is my first personal project! <br>
+                        I'm now currently working <br>
+                        working on an organisational app.
+                    </p>
+                    <div class="blue hover-rect"></div>
+                    <p class="blue speech">
+                        I am currently <br>
+                        interested in <br>
+                        pursuing software <br>
+                        engineering!
+                    </p>
+                </section>
     </body>
 </html>

@@ -10,10 +10,6 @@ h1, h2, p, a, button {
     padding: 8px;
 }
 
-h1 {
-    padding-top: 50px;
-}
-
 .introduction {
     padding-left: 70px;
     padding-bottom: 10px;
@@ -35,11 +31,13 @@ p {
 }
 
 
+
 p.contact:hover, a:hover {
-    background-color: #a1827e;
+    background-color: #a89694;
     color: #ece7df;
     text-decoration: none;
     border-radius: 10px;
+    transition: 0.5s ease-out;
 }
 
 .container {
@@ -50,7 +48,6 @@ p.contact:hover, a:hover {
 
 
 .main {
-    padding-left: 50px;
     padding-bottom: 25px;
     width: 90%;
     height: 650px;
@@ -61,8 +58,6 @@ p.contact:hover, a:hover {
 .main-image {
     padding: 10px;
     object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     height: 100%;
     box-shadow: 2px 2px 10px 1px #9e7e79;
@@ -113,35 +108,35 @@ p.contact:hover, a:hover {
 }
 
 .pink.hover-rect {
-    top: 30%;
+    top: 29%;
     right: 51%;
 }
 
 .yellow.hover-rect {
-    top: 50%;
+    top: 48%;
     right: 35%;
 }
 
 .blue.hover-rect {
-    top: 75%;
-    right: 60%;
+    top: 71%;
+    right: 65%;
 }
 
-@media screen and (max-width:1190px){
+@media screen and (max-width:1100px){
     .yellow.hover-rect {
         right: 30%;
     }
 }
 
-@media screen and (max-width:850px) and (min-width: 600px) {
+@media screen and (max-width:800px) and (min-width: 650px) {
     .yellow.hover-rect {
         right: 22%;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
     .yellow.hover-rect {
-        right: 12%;
+        right: 16%;
     }
 }
 
@@ -150,7 +145,7 @@ p.contact:hover, a:hover {
         right: 25%;
     }
     .blue.hover-rect {
-        right: 63%;
+        right: 67%;
     }
 }
 
@@ -162,7 +157,7 @@ p.contact:hover, a:hover {
         right: 38%;
     }
     .blue.hover-rect {
-        right: 68%;
+        right: 75%;
     }
 
 }
@@ -186,24 +181,25 @@ div.hover-rect:hover + p.speech {
     border: 8px solid #f1f1f1;
     z-index: 9;
     background-color: #dfd7ca;
-    box-shadow: 3px 3px 7px 3px #6e5752;
+    box-shadow: 3px 3px 15px 3px #866e69;
     font-family: 'Source Serif Pro', serif;
     color: #775e5a;
+    border-radius: 10px;
+    min-height: 60%;
+    width: 60%;
+    margin-left: 20%;
 }
 
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+
+input {
+    background: #f1f1f1;
+    border: none;
+    padding-bottom: 10px;
+    border-radius: 3px;
 }
 
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+input.message {
+    padding-bottom: 60px;
 }
 
 /* Set a style for the submit/login button */
@@ -215,16 +211,55 @@ div.hover-rect:hover + p.speech {
   cursor: pointer;
   width: 100%;
   margin-bottom:10px;
-  opacity: 0.8;
 }
 
-/* Add a red background color to the cancel button */
-.cancel {
-    background-color: #a1827e;
-    color: #ece7df
+.submit, .cancel {
+    background-color: #856c68;;
+    color: #ece7df;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+.submit:hover, .cancel:hover {
+    background-color: #ece7df;
+    color: #856c68;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 13px;
+    padding: 5px;
+    color: rgb(151, 149, 149);
+    font-style: italic;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.space {
+    height: 20px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #775e5a;
+    
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.space-buttons {
+    width: 15px;
 }

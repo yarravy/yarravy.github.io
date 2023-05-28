@@ -30,8 +30,6 @@ p {
     font-size: 18px;
 }
 
-
-
 p.contact:hover, a:hover {
     background-color: #a89694;
     color: #ece7df;
@@ -45,7 +43,6 @@ p.contact:hover, a:hover {
     flex-direction: row;
     justify-content: flex-end;
 }
-
 
 .main {
     padding-bottom: 25px;
@@ -173,7 +170,6 @@ div.hover-rect:hover + p.speech {
   cursor: pointer;
 }
 
-/* The popup form - hidden by default */
 .form-popup {
     display: none;
     position: absolute;
@@ -190,7 +186,6 @@ div.hover-rect:hover + p.speech {
     margin-left: 20%;
 }
 
-
 input {
     background: #f1f1f1;
     border: none;
@@ -202,8 +197,7 @@ input.message {
     padding-bottom: 60px;
 }
 
-/* Set a style for the submit/login button */
-.form-container .btn {
+.btn {
   background-color: #04AA6D;
   color: white;
   padding: 16px 20px;

@@ -12,7 +12,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
@@ -28,44 +27,42 @@
                         <button onclick="openForm()" class="open-button"><p class="contact">Leave me a message!</p></button>
                     </div>
                 </div>
-                <div class="form-popup" id="myForm" class="form-container">
-                    <div class="cont">
-                        <form>
-                            <div class="container-input">
-                                <h1>Leave me a message!</h1>
-                                <label for="name">Name*:</label>
-                                <input type="text" placeholder="Enter Name" name="name" required>
-                                <div class="space"></div>
-                                <label for="email">Email:</label>
-                                <input type="email" placeholder="Enter Email" name="email">
-                                <div class="space"></div>
-                                <label for="message">Message*:</label>
-                                <input type="text" placeholder="Message" name="message" class="message" required>
-                                <div class="space"></div>
-                                <div class="space"></div>
-                                <div class="button-container">
-                                    <button type="Submit" class="btn submit">Submit</button>
-                                    <div class="space-buttons"></div>
-                                    <button type="Cancel" onclick="closeForm()" class="btn cancel">Cancel</button>
-                                </div>
-                                <script>
-                                    function openForm() {
-                                        document.getElementById("myForm").style.display = "block";
-                                    }
-        
-                                    function closeForm() {
-                                        document.getElementById("myForm").style.display = "none";
-                                    }
-                                </script>
+                <div class="form-popup" id="myForm">
+                    <form>
+                        <div class="container-input">
+                            <h1>Leave me a message!</h1>
+                            <label for="name">Name*:</label>
+                            <input type="text" placeholder="Enter Name" name="name" required>
+                            <div class="space"></div>
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Enter Email" name="email">
+                            <div class="space"></div>
+                            <label for="message">Message*:</label>
+                            <input type="text" placeholder="Message" name="message" class="message" required>
+                            <div class="space"></div>
+                            <div class="space"></div>
+                            <div class="button-container">
+                                <button type="Submit" class="btn submit">Submit</button>
+                                <div class="space-buttons"></div>
+                                <button type="Cancel" onclick="closeForm()" class="btn cancel">Cancel</button>
                             </div>
-                        </form>
-                    </div>
+                            <script>
+                                function openForm() {
+                                    document.getElementById("myForm").style.display = "block";
+                                }
+    
+                                function closeForm() {
+                                    document.getElementById("myForm").style.display = "none";
+                                }
+                            </script>
+                        </div>
+                    </form>
                 </div>
                 <h1 class="introduction">
                     Hello! I'm Yarravy. 
                 </h1>
                 <p class="introduction">Welcome to my personal website! <br>To find out some brief info about me, hover over each of the characters in the image below.</p>
-                <section class="main"> 
+                <div class="main"> 
                     <img class="main-image" src="pixil-frame-1.png">
                     <div class="pink hover-rect"></div>
                     <p class="pink speech">
@@ -86,7 +83,7 @@
                         pursuing software <br>
                         engineering!
                     </p>
-                </section>
+                </div>
 
     </body>
 </html>
